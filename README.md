@@ -1,2 +1,55 @@
-# market-data
-Market data for algorithmic trading
+# Algorithmic Trading Market Data Repository
+
+A curated collection of high-resolution market data, optimized for quantitative analysis and algorithmic trading strategy backtesting.
+
+***
+
+## 📊 Data Description
+
+This repository contains historical market data with a **1-minute interval**. The data is provided in `.csv` format for easy use with common data analysis libraries like pandas.
+
+Each row in the dataset represents one minute of trading activity and includes the following columns:
+
+* **`timestamp`**: The start time of the 1-minute interval (e.g., in UTC).
+* **`open`**: The price at the beginning of the interval.
+* **`high`**: The highest price reached during the interval.
+* **`low`**: The lowest price reached during the interval.
+* **`close`**: The price at the end of the interval.
+* **`volume`**: The total trading volume during the interval.
+* **`price`**: The volume-weighted average price (VWAP) for the interval, calculated as `Σ(Price * Volume) / Σ(Volume)`.
+
+***
+
+## 🚀 Getting Started
+
+To get started, you can clone this repository or download the specific dataset you need.
+
+Here is a quick example of how to load and inspect the data using **Python** and the **pandas** library:
+
+```python
+import pandas as pd
+
+# Load a dataset
+# Make sure to replace 'path/to/your/datafile.csv' with the correct file path
+df = pd.read_csv("path/to/your/datafile.csv", parse_dates=["timestamp"], index_col="timestamp", sep=";")
+
+# Print the first 5 rows of the dataframe
+print("Data Head:")
+print(df.head())
+
+# Get a quick statistical summary of the data
+print("\nData Description:")
+print(df.describe())
+```
+
+## ⚠️ Disclaimer
+
+This data is provided for educational and research purposes only. It is not intended as financial advice. We do not guarantee the accuracy, completeness, or timeliness of the data. Trading financial instruments involves risk, and you should use this data at your own discretion.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you find any issues, have suggestions for new datasets, or want to improve the existing data, please feel free to open an issue or submit a pull request.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
