@@ -25,7 +25,7 @@ The data is organized according to the following hierarchy:
 * **`symbol`**: The filename, which is the ticker symbol of the instrument.
     * *Examples: `AAPL`, `BTC`*
 
-### OHLC
+### OHLC (Open, High, Low, Close)
 
 Each row in the dataset includes the following columns:
 
