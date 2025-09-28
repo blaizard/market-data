@@ -6,11 +6,30 @@ A curated collection of high-resolution market data, optimized for quantitative 
 
 ## 📊 Data Description
 
-This repository contains historical market data with a **1-minute interval**. The data is provided in `.csv` format for easy use with common data analysis libraries like pandas.
+This repository contains historical market data. The data is provided in `.csv` format for easy use with common data analysis libraries like pandas.
 
-Each row in the dataset represents one minute of trading activity and includes the following columns:
+The data is organized according to the following hierarchy:
 
-* **`timestamp`**: The start time of the 1-minute interval (e.g., in UTC).
+* **`asset_class`**: The type of financial asset.
+    * *Examples: `stocks`, `crypto`*
+
+* **`data_type`**: The nature of the data stored in the CSV file.
+    * *Examples: `ohlc` (Open, High, Low, Close), `ticks`*
+
+* **`currency`**: The currency in which the asset is denominated.
+    * *Examples: `usd`, `eur`, `jpy`*
+
+* **`period`**: The time frequency of the data points.
+    * *Examples: `1min`, `5min`, `1s`, `daily`*
+
+* **`symbol`**: The filename, which is the ticker symbol of the instrument.
+    * *Examples: `AAPL`, `BTC`*
+
+### OHLC
+
+Each row in the dataset includes the following columns:
+
+* **`timestamp`**: The start time interval (e.g., in UTC).
 * **`open`**: The price at the beginning of the interval.
 * **`high`**: The highest price reached during the interval.
 * **`low`**: The lowest price reached during the interval.
