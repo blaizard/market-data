@@ -65,6 +65,12 @@ print(df.describe())
 
 This data is provided for educational and research purposes only. It is not intended as financial advice. We do not guarantee the accuracy, completeness, or timeliness of the data. Trading financial instruments involves risk, and you should use this data at your own discretion.
 
+## Sponsorship
+
+If you find this project helpful and would like to support its continued development, please consider becoming a sponsor. Your sponsorship helps me dedicate more time to maintaining this repository and adding new features. Thank you for your support!
+
+[Sponsor this project](https://github.com/sponsors/blaizard)
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you find any issues, have suggestions for new datasets, or want to improve the existing data, please feel free to open an issue or submit a pull request.
